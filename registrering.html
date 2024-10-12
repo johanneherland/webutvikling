@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrering</title>
+</head>
+<body>
+    <header>
+        <h1>Hovedoverskrift</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="mal.html">Mal</a></li>
+            <li><a href="kontakt.html">Kontakt oss</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Kontakt oss</h2>
+        <form method="post">
+            <label for="name">Navn:</label>
+            <input type="text" name="name" id="name" placeholder="Fornavn Etternavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>                
+            <label for="email">E-post:</label>
+            <input type="email" name="email" id="email" placeholder="brukernavn@epost.com" required>
+            <label for="password">Passord:</label>
+            <input type="password" placeholder="********" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            <label for="age">Alder:</label>
+            <input type="number" min="18" max="99" required>
+            <label for="phone">Telefonnummer:</label>
+            <input type="number" pattern="[0-9]{8,12}" required>
+            <label for="birthdate">Fødselsdato:</label>
+            <input type="date" max="2023-12-31" required>
+            <label for="gender">Kjønn:</label>
+            <label for="mann">Mann</label><br>
+            <input type="radio" id="mann" name="gender" value="mann">
+            <label for="kvinne">Kvinne</label>
+            <input type="radio" id="kvinne" name="fav_language" value="kvinne">
+            <label for="annet">Annet</label>
+            <input type="radio" id="annet" name="fav_language" value="annet">
+            <label for="land">Land:</label>
+            <input type=""> <!---?????????-->
+            <label for="personvern">Må være huket av før skjemaet kan sendes inn:</label>
+            <input type="checkbox" required>
+            <input type="submit" value="Send melding"> 
+        </form>
+    </section>
+</body>
+</html>
