@@ -7,27 +7,24 @@
     <!-- Angir tegnsettet som UTF-8, som støtter de fleste språk og spesialtegn. Viktig for korrekt visning av tekst. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <!-- Sørger for at siden er responsiv ved å tilpasse bredden til enhetens skjermstørrelse. Dette gjør siden brukervennlig på mobil og nettbrett. -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Oppskrift</title> 
     <!-- Siden får tittelen "Oppskrift", som vises i nettleserens fane. -->
 </head>
 <body>
     <header>
-        <h2>Løsningsforslag: Øvelse 3</h2> 
-        <!-- Hovedoverskriften på siden, brukt for å informere brukeren om innholdet og funksjonen til siden. -->
+        <h1>Hovedoverskrift</h1> 
+        <!-- Hovedoverskriften på siden -->
     </header>
     
-    <nav>
-        <!-- Navigasjonsmeny som gir brukeren muligheten til å navigere til forskjellige sider på nettstedet. -->
+    <nav id="main-menu">
         <ul>
-            <li><a href="index.html">Hjem</a></li> 
-            <!-- Lenke til hjemmesiden, der "Hjem" er teksten som brukeren ser og kan klikke på. -->
-            <li><a href="validering.html">Valideringsoppgave</a></li> 
-            <!-- Lenke til en side som omhandler en valideringsoppgave. -->
-            <li><a href="oppskrift.html">Lister: Oppskrift</a></li>
-            <li><a href="mal.html">Mal</a></li> 
-            <!-- Lenke til en mal-side. -->
-            <li><a href="#">Kontakt oss</a></li> 
-            <!-- Placeholder-lenke som for øyeblikket ikke leder til en faktisk side, men reserverer plass for en "Kontakt oss"-side. -->
+            <li><a id="active" href="index.html">Hjem</a></li>
+            <li><a href="oppskrift.html">Oppskrift</a></li>
+            <li><a href="studieplan.html">Studieplan</a></li>
+            <li><a href="registrering.html">Registrering</a></li>
+            <li><a href="mal.html">Mal</a></li>
+            <li><a href="kontakt.html">Kontakt oss</a></li>
         </ul>
     </nav>
     
